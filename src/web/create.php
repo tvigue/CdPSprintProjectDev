@@ -1,7 +1,7 @@
 <?php
 
 // connexion à la base
-$db = new mysqli('localhost','root','','project');
+$db = new mysqli('localhost','root','','projet_cdp2016_acv');
 
 if($db->connect_errno){
 printf("Echec de la connexion: %s\n", $db->connect_error);
@@ -33,7 +33,7 @@ exit();
     else $inscription =0;
 
     // on écrit la requête sql
-    $id = $db->query("SELECT MAX(id_atelier) FROM ateliers;");
+    $id = $db->query("SELECT MAX(id_atelier) FROM Ateliers;");
     while ($result = $id->fetch_assoc())
     {
       if($result['MAX(id_atelier)'] == NULL){
@@ -44,7 +44,7 @@ exit();
       }
     }
 
-    $sql ="INSERT INTO Ateliers (id_atelier,name_atelier,theme_atelier,type_atelier,id_laboratoire,lieu_atelier,duree_atelier,date_atelier,horaire_atelier,capacite,inscription)
+    $sql ="INSERT INTO Ateliers (id_atelier,nom_atelier,theme_atelier,type_atelier,id_laboratoire,lieu_atelier,duree_atelier,date_atelier,horaire_atelier,capacite_atelier,inscription_atelier)
     VALUES ('$id_atelier','$nom','$theme','$type','$id_laboratoire','$lieu','$duree','$date','$horaire','$capacite','$inscription')";
 
     if(!$db->query($sql)){
@@ -52,5 +52,5 @@ exit();
     }
 
     $db->close();  // on ferme la connexion
-    header('location : listeAtelier.php');
+    header('location : ListeAteliers.php');
 ?>

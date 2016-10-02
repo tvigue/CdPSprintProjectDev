@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Client :  127.0.0.1
--- Généré le :  Mer 28 Septembre 2016 à 14:47
+-- Généré le :  Dim 02 Octobre 2016 à 11:52
 -- Version du serveur :  5.7.14
 -- Version de PHP :  5.6.25
 
@@ -33,11 +33,11 @@ CREATE TABLE `ateliers` (
   `type_atelier` varchar(100) DEFAULT NULL,
   `id_laboratoire` int(11) NOT NULL,
   `lieu_atelier` varchar(100) DEFAULT NULL,
-  `duree_atelier` varchar(100) DEFAULT NULL,
+  `duree_atelier` time DEFAULT NULL,
   `date_atelier` date DEFAULT NULL,
   `horaire_atelier` time DEFAULT NULL,
   `capacite` int(11) DEFAULT NULL,
-  `inscription` tinyint(1) DEFAULT NULL
+  `inscription` tinyint(1) NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
@@ -45,7 +45,7 @@ CREATE TABLE `ateliers` (
 --
 
 INSERT INTO `ateliers` (`id_atelier`, `name_atelier`, `theme_atelier`, `type_atelier`, `id_laboratoire`, `lieu_atelier`, `duree_atelier`, `date_atelier`, `horaire_atelier`, `capacite`, `inscription`) VALUES
-(1, 'atelier1', 'theme1', 'type1', 1, 'Bordeaux', '30min', '2008-10-16', '18:00:00', 12, 0);
+(0, 'azer', 'azert', 'Test', 1, 'Paris', '23:59:00', '2016-12-31', '23:59:00', 1, 1);
 
 --
 -- Index pour les tables exportées
@@ -57,15 +57,6 @@ INSERT INTO `ateliers` (`id_atelier`, `name_atelier`, `theme_atelier`, `type_ate
 ALTER TABLE `ateliers`
   ADD PRIMARY KEY (`id_atelier`);
 
---
--- AUTO_INCREMENT pour les tables exportées
---
-
---
--- AUTO_INCREMENT pour la table `ateliers`
---
-ALTER TABLE `ateliers`
-  MODIFY `id_atelier` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

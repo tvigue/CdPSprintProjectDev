@@ -17,8 +17,12 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données :  `project`
+-- Base de données :  `projet_cdp2016_acv`
 --
+
+/* La ligne suivante est à décommenter seulement et seulement si la bdd "projet_cdp2016_acv" n'existe pas encore sur votre serveur car le script pourra ainsi la créer. */
+-- CREATE DATABASE `projet_cdp2016_acv`;
+USE `projet_cdp2016_acv`;
 
 -- --------------------------------------------------------
 
@@ -26,9 +30,9 @@ SET time_zone = "+00:00";
 -- Structure de la table `ateliers`
 --
 
-CREATE TABLE `ateliers` (
+CREATE TABLE `Ateliers` (
   `id_atelier` int(11) NOT NULL,
-  `name_atelier` varchar(100) DEFAULT NULL,
+  `nom_atelier` varchar(100) DEFAULT NULL,
   `theme_atelier` varchar(100) DEFAULT NULL,
   `type_atelier` varchar(100) DEFAULT NULL,
   `id_laboratoire` int(11) NOT NULL,
@@ -36,16 +40,19 @@ CREATE TABLE `ateliers` (
   `duree_atelier` time DEFAULT NULL,
   `date_atelier` date DEFAULT NULL,
   `horaire_atelier` time DEFAULT NULL,
-  `capacite` int(11) DEFAULT NULL,
-  `inscription` tinyint(1) NOT NULL DEFAULT '0'
+  `capacite_atelier` int(11) DEFAULT NULL,
+  `inscription_atelier` tinyint(1) NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Vider la table avant d'insérer `ateliers`
+--
+
+TRUNCATE TABLE `Ateliers`;
 
 --
 -- Contenu de la table `ateliers`
 --
-
-INSERT INTO `ateliers` (`id_atelier`, `name_atelier`, `theme_atelier`, `type_atelier`, `id_laboratoire`, `lieu_atelier`, `duree_atelier`, `date_atelier`, `horaire_atelier`, `capacite`, `inscription`) VALUES
-(0, 'azer', 'azert', 'Test', 1, 'Paris', '23:59:00', '2016-12-31', '23:59:00', 1, 1);
 
 --
 -- Index pour les tables exportées
@@ -54,8 +61,14 @@ INSERT INTO `ateliers` (`id_atelier`, `name_atelier`, `theme_atelier`, `type_ate
 --
 -- Index pour la table `ateliers`
 --
-ALTER TABLE `ateliers`
+ALTER TABLE `Ateliers`
   ADD PRIMARY KEY (`id_atelier`);
+
+--
+-- AUTO_INCREMENT pour la table `ateliers`
+--
+ALTER TABLE `Ateliers`
+  MODIFY `id_atelier` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

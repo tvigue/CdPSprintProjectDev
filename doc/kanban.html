@@ -1,117 +1,133 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <title>Kanban</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-<body>
+  <head>
+    <title>Kanban</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
 
-<div class="container">
-  <h2>Kanban</h2>
+    <div class="container">
+      <div class="starter-template">
+        <h2>Kanban</h2>
 
-  <table class="table table-bordered">
-  <thead>
-    <tr>
-    <th></th>
-    <th>ToDo</th>
-    <th>On Going</th>
-    <th>Test</th>
-    <th>Done</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-    <td><b>All</b></td>
-    <td></td>
-    <td></td>
-    <td>
-      <table style="margin: 5px;">
-        <tbody style="border: 1px solid black; text-align: center;">
-          <tr><td><b>T1</b></td></tr>
-          <tr><td>BD</td></tr>
-          <tr><td>[Tristan]</tr></td>
-        </tbody>
-      </table>
-      <table style="margin: 5px;">
-        <tbody style="border: 1px solid black; text-align: center;">
-          <tr><td><b>T2</b></td>
-          </tr><tr><td>Traitement</td></tr>
-          <tr><td>[Tristan]</tr></td>
-        </tbody>
-      </table>
-    </td>
-    <td></td>
-    </tr>
-    <tr>
-    <td><b>US1: Gestion ateliers</b></td>
-    <td>
-      <table style="margin: 5px;">
-        <tbody style="border: 1px solid black; text-align: center;">
-          <tr><td><b>T3.4</b></td></tr>
-          <tr><td>Suppression Atelier</td></tr>
-        </tbody>
-      </table>
-      <table style="margin: 5px;">
-        <tbody style="border: 1px solid black; text-align: center;">
-          <tr><td><b>T3.3</b></td>
-          </tr><tr><td>Modification Atelier</td></tr>
-        </tbody>
-      </table>
-      <table style="margin: 5px;">
-        <tbody style="border: 1px solid black; text-align: center;">
-          <tr><td><b>T5</b></td></tr>
-          <tr><td>Test E2E</td></tr>
-        </tbody>
-      </table>
-    </td>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th></th>
+              <th>ToDo</th>
+              <th>On Going</th>
+              <th>Test</th>
+              <th>Done</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><b>All</b></td>
 
-    <td>
-      <table style="margin: 5px;">
-        <tbody style="border: 1px solid black; text-align: center;">
-          <tr><td><b>T3.1</b></td></tr>
-          <tr><td>Liste Ateliers</td></tr>
-          <tr><td>[Thomas]</tr></td>
-        </tbody>
-      </table>
-    </td>
+              <td>
 
-    <td>
-      <table style="margin: 5px;">
-        <tbody style="border: 1px solid black; text-align: center;">
-          <tr><td><b>T3.2</b></td></tr>
-          <tr><td>Ajout Atelier</td></tr>
-          <tr><td>[Tristan]</tr></td>
-        </tbody>
-      </table>
-      <table style="margin: 5px;">
-        <tbody style="border: 1px solid black; text-align: center;">
-          <tr><td><b>T4.1</b></td></tr>
-          <tr><td>Generer données BD</td></tr>
-          <tr><td>[Nathalie]</tr></td>
-        </tbody>
-      </table>
-      <table style="margin: 5px;">
-        <tbody style="border: 1px solid black; text-align: center;">
-          <tr><td><b>T4.2</b></td></tr>
-          <tr><td>Test BD</td></tr>
-          <tr><td>[Nathalie]</tr></td>
-        </tbody>
-      </table>
-    </td>
+              </td>
 
-    <td>
+              <td>
 
-    </td>
-    </tr>
-  </tbody>
-  </table>
-</div>
+              </td>
 
-</body>
+              <td>
+                <table style="margin: 5px;">
+                  <tbody style="border: 1px solid black; text-align: center;">
+                    <tr><td><b>T1</b></td></tr>
+                    <tr><td>BD</td></tr>
+                    <tr><td>[Tristan]</td></tr>
+                  </tbody>
+                </table>
+
+                <table style="margin: 5px;">
+                  <tbody style="border: 1px solid black; text-align: center;">
+                    <tr><td><b>T2</b></td></tr>
+                    <tr><td>Traitement</td></tr>
+                    <tr><td>[Tristan]</td></tr>
+                  </tbody>
+                </table>
+              </td>
+
+              <td>
+
+              </td>
+            </tr>
+            <tr>
+              <td><b>US1: Gestion ateliers</b></td>
+
+              <td>
+                <table style="margin: 5px;">
+                  <tbody style="border: 1px solid black; text-align: center;">
+                    <tr><td><b>T3.3</b></td></tr>
+                    <tr><td>Modification Atelier</td></tr>
+                  </tbody>
+                </table>
+
+                <table style="margin: 5px;">
+                  <tbody style="border: 1px solid black; text-align: center;">
+                    <tr><td><b>T5</b></td></tr>
+                    <tr><td>Test E2E</td></tr>
+                  </tbody>
+                </table>
+              </td>
+
+              <td>
+                <table style="margin: 5px;">
+                  <tbody style="border: 1px solid black; text-align: center;">
+                    <tr><td><b>T3.4</b></td></tr>
+                    <tr><td>Suppression Atelier</td></tr>
+                    <tr><td>[Thomas]</td></tr>
+                  </tbody>
+                </table>
+              </td>
+
+              <td>
+                <table style="margin: 5px;">
+                  <tbody style="border: 1px solid black; text-align: center;">
+                    <tr><td><b>T3.2</b></td></tr>
+                    <tr><td>Ajout Atelier</td></tr>
+                    <tr><td>[Tristan]</td></tr>
+                  </tbody>
+                </table>
+
+                <table style="margin: 5px;">
+                  <tbody style="border: 1px solid black; text-align: center;">
+                    <tr><td><b>T4.1</b></td></tr>
+                    <tr><td>Generer données BD</td></tr>
+                    <tr><td>[Nathalie]</td></tr>
+                  </tbody>
+                </table>
+
+                <table style="margin: 5px;">
+                  <tbody style="border: 1px solid black; text-align: center;">
+                    <tr><td><b>T4.2</b></td></tr>
+                    <tr><td>Test BD</td></tr>
+                    <tr><td>[Nathalie]</td></tr>
+                  </tbody>
+                </table>
+              </td>
+
+              <td>
+                <table style="margin: 5px;">
+                  <tbody style="border: 1px solid black; text-align: center;">
+                    <tr><td><b>T3.1</b></td></tr>
+                    <tr><td>Liste Ateliers</td></tr>
+                    <tr><td>[Thomas]</td></tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
 </html>
 
 

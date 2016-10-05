@@ -112,11 +112,11 @@
       printf("              <td>%s</td><td>%s</td><td>%s</td>\n", $row["nom_atelier"], $row["theme_atelier"], $row["type_atelier"]);
       printf("              <td>\n");
       printf("                <form style=\"display: inline;\" action=\"FormulaireAtelier.php\" method=\"post\">\n");
-      printf("                  <input type=\"hidden\" name=\"id_atelier\"value=\"%s\"/>\n", $row["id_atelier"]);
+      printf("                  <input type=\"hidden\" name=\"id_atelier\" value=\"%s\"/>\n", $row["id_atelier"]);
       printf("                  <input class=\"btn btn-default\" type=\"submit\" value=\"Modifier\"/>\n");
       printf("                </form>\n");
       printf("                <form style=\"display: inline;\" action=\"#\" method=\"post\">\n");
-      printf("                  <input type=\"hidden\" name=\"id_atelier\"value=\"%s\"/>\n", $row["id_atelier"]);
+      printf("                  <input type=\"hidden\" name=\"id_atelier\" value=\"%s\"/>\n", $row["id_atelier"]);
       printf("                  <input class=\"btn btn-default\" type=\"submit\" value=\"Suprimer\"/>\n");
       printf("                </form>\n");
       printf("              </td>\n");

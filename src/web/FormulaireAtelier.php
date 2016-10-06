@@ -54,15 +54,15 @@
     <div class="container">
 
       <div class="starter-template">
-        <h1>Création atelier</h1>
-        <form action="create.php" method="post" >
+        <h1>Création d'un atelier</h1>
+        <form action="create.php" method="post">
         <table class="table_formulaire">
           <tr>
-            <td>Nom de l'Atelier</td>
+            <td>Nom de l'atelier</td>
             <td><input type="text" name="nom" /></td>
           </tr>
           <tr>
-            <td>Theme</td>
+            <td>Thème</td>
             <td><input type="text" name="theme" /></td>
           </tr>
           <tr>
@@ -86,7 +86,7 @@
             <td><input type="time" name="horaire" required/></td>
           </tr>
           <tr>
-            <td>Nb de place</td>
+            <td>Nombre de places</td>
             <td><input type="number" name="capacite" min="0" value="1")/></td>
           </tr>
           <tr>

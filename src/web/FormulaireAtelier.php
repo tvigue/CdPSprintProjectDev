@@ -45,15 +45,15 @@
 		  <td><input type="text" name="lieu" placeholder="Emplacement de l'atelier" value="<?php if(isset($row['lieu_atelier'])) echo $row['lieu_atelier'];?>" /></td>
 		</tr>
 		<tr>
-		  <td>Durée (HH:MM)</td>
+		  <td>Durée (HH:mm)</td>
 		  <td><input type="time" name="duree" value="<?php if(isset($row['duree_atelier'])) echo $row['duree_atelier'];?>" required/></td>
 		</tr>
 		<tr>
-		  <td>Date (jj-mm-AAAA)</td>
+		  <td>Date (jj/mm/aaaa)</td>
 		  <td><input type="date" name="date" value="<?php if(isset($row['date_atelier'])) echo $row['date_atelier'];?>" required/></td>
 		</tr>
 		<tr>
-		  <td>Horaire de début (HH:MM)</td>
+		  <td>Horaire de début (HH:mm)</td>
 		  <td><input type="time" name="horaire" value="<?php if(isset($row['horaire_atelier'])) echo $row['horaire_atelier'];?>" required/></td>
 		</tr>
 		<tr>

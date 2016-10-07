@@ -4,7 +4,7 @@
     $id_atelier=$_POST['id_atelier'];
     //$id_atelier = 0;
     // connexion à la base
-    $db=new mysqli('localhost', 'root', '', 'project');
+    $db=new mysqli('localhost', 'root', '', 'projet_cdp2016_acv');
     //$db=new mysqli('dbserver', '<LOGIN>', '<MOT DE PASSE>', 'tvigue'); //BDD à choisir si connexion au Cremi
 
     if($db->connect_errno) {

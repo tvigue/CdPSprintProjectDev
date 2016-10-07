@@ -1,14 +1,7 @@
 <?php
+$titre_page = '';
+include("includes/haut.php");
 
-  // connexion à la base
-  $db=new mysqli('localhost', 'root', '', 'projet_cdp2016_acv');
-  //$db=new mysqli('dbserver', '<LOGIN>', '<MOT DE PASSE>', 'tvigue'); //BDD à choisir si connexion au Cremi
-
-  if($db->connect_errno){
-    printf("Echec de la connexion: %s\n", $db->connect_error);
-    exit();
-  }
-  
   // On commence par récupérer les champs
   if(isset($_POST['nom']))
     $nom=$_POST['nom'];
@@ -44,7 +37,7 @@
   else
     $inscription=0;
   
-  // Update Atelier //
+  // Update Atelier
   if(isset($_POST['id_atelier'])) {
     $id_atelier=$_POST['id_atelier'];
     $sql="UPDATE Ateliers SET nom_atelier = '$nom', theme_atelier = '$theme', type_atelier = '$type', lieu_atelier ='$lieu', duree_atelier = '$duree', horaire_atelier ='$horaire',  capacite_atelier ='$capacite', inscription_atelier = '$inscription'
@@ -60,6 +53,7 @@
     printf("Message d'erreur : %s \n", $db->error);
   }
 
-  $db->close();  // on ferme la connexion
+  include("includes/bas.php");
   header('Location:ListeAteliers.php');
+  
 ?>

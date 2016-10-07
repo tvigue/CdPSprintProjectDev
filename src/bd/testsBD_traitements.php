@@ -9,7 +9,7 @@
 	/******* Configuration *******/
 	$DBhost  = "localhost";  // serveur de la bdd
 	$DBowner = "root";  // login SQL
-	$DBpwd    = "";  // password SQL
+	$DBpwd   = "";  // password SQL
 	$DBname  = "projet_cdp2016_acv"; // nom de la bdd
 
 	

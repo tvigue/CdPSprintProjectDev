@@ -27,10 +27,10 @@ USE `projet_cdp2016_acv`;
 -- --------------------------------------------------------
 
 --
--- Structure de la table `ateliers`
+-- Structure de la table `Ateliers`
 --
 
-CREATE TABLE IF NOT EXISTS `ateliers` (
+CREATE TABLE IF NOT EXISTS `Ateliers` (
   `id_atelier` int(11) NOT NULL AUTO_INCREMENT,
   `nom_atelier` varchar(100) DEFAULT NULL,
   `theme_atelier` varchar(100) DEFAULT NULL,
@@ -46,16 +46,16 @@ CREATE TABLE IF NOT EXISTS `ateliers` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=101;
 
 --
--- Vider la table avant d'insérer `ateliers`
+-- Vider la table avant d'insérer `Ateliers`
 --
 
-TRUNCATE TABLE `ateliers`;
+TRUNCATE TABLE `Ateliers`;
 
 --
--- Contenu de la table `ateliers`
+-- Contenu de la table `Ateliers`
 --
 
-INSERT INTO `ateliers` (`id_atelier`, `nom_atelier`, `theme_atelier`, `type_atelier`, `id_laboratoire`, `lieu_atelier`, `duree_atelier`, `date_atelier`, `horaire_atelier`, `capacite_atelier`, `inscription_atelier`) VALUES
+INSERT INTO `Ateliers` (`id_atelier`, `nom_atelier`, `theme_atelier`, `type_atelier`, `id_laboratoire`, `lieu_atelier`, `duree_atelier`, `date_atelier`, `horaire_atelier`, `capacite_atelier`, `inscription_atelier`) VALUES
 (1, 'azer', 'azert', 'Test', 1, 'Paris', '00:10:00', '2016-12-31', '23:59:00', 1, 1),
 (2, 'Nunc sed orci lobortis', 'magna. Cras convallis convallis', 'Vivamus rhoncus. Donec est.', 52, 'Ap #429-9883 Purus. St.', '00:10:00', '2016-11-02', '12:57:18', 744, 0),
 (3, 'magna, malesuada vel, convallis', 'Vivamus molestie dapibus ligula.', 'justo nec ante. Maecenas', 80, 'P.O. Box 667, 2229 Arcu. St.', '00:10:00', '2016-02-29', '05:40:24', 15, 1),

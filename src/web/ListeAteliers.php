@@ -73,7 +73,7 @@
 
   // connexion à la base de données
   $db=new mysqli('localhost','root','','projet_cdp2016_acv'); //BDD chez nous
-  //$db = new mysqli('dbserver','<LOGIN>','<MOT DE PASSE>','ncraeye'); //BDD à choisir si connexion au Cremi
+  //$db=new mysqli('dbserver', '<LOGIN>', '<MOT DE PASSE>', 'tvigue'); //BDD à choisir si connexion au Cremi
 
   if($db->connect_errno) {
     printf("Echec de la connexion: %s\n", $db->connect_error);
@@ -83,7 +83,7 @@
   // calcul du nombre de pages
   $article_par_pages=20;
 
-  $query_nombre_ateliers="SELECT * FROM ateliers";
+  $query_nombre_ateliers="SELECT * FROM Ateliers";
 
   if($result=$db->query($query_nombre_ateliers)) {
     $nombre_lignes=mysqli_num_rows($result);
@@ -105,7 +105,7 @@
 
   $id_premiere_ligne=($page_actuelle-1)*$article_par_pages;
 
-  $query_ateliers="SELECT * FROM ateliers AS A ORDER BY A.date_atelier ASC LIMIT ".$id_premiere_ligne.", ".$article_par_pages;
+  $query_ateliers="SELECT * FROM Ateliers AS A ORDER BY A.date_atelier ASC LIMIT ".$id_premiere_ligne.", ".$article_par_pages;
 
   if($result=$db->query($query_ateliers)) {
     while ($row=$result->fetch_assoc()) {

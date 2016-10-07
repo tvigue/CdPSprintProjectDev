@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<title>Installation du site</title>
+</head>
+
+<body>
+	<h1> Pré-requis </h1>
+	<p>Les supports nécessaires pour le bon fonctionnement du site, côté serveur et côté client, sont les suivants :
+	<ul>
+		<li> Le serveur HTTP Apache. </li>
+		<li> Le système de gestion de bases de données MySQL. </li>
+		<li> L'outil d'administration web des bases MySQL phpMyAdmin.</li>
+		<li> L'interpréteur de script PHP.</li>
+		<li> Un éditeur de texte.</li>
+		<li> Un navigateur internet.</li>
+	</ul>
+	</p>
+	
+	<p>Comme dans un premier temps ce projet web sera local à votre espace de travail, vous pouvez en fait retrouver les quatre premiers outils dans une plateforme de développement web appelée "Wamp", "Lamp" ou "Mamp"" selon sur quel système d'exploitation vous prévoyez de déposer votre projet. Wamp est pour Windows, Lamp pour Linux et Mamp pour Mac.
+	</p>
+	
+	<h1> Installation </h1>
+	<p> Pour l'importation du site, il vous faut faire les étapes suivantes :
+	<ol>
+		<li> Mettre en place la base de données nommée <span style="font-style: italic;">projet_cdp2016_acv</span> et la table de données <span style="font-style: italic;">ateliers</span> dans votre serveur de base de données. Cette étape se réalise sur l'interface web de phpMyAdmin en important dessus le fichier "database.sql" qui se trouve dans le dossier doc/ du projet.</li>
+		<li> Vérifier les paramètres de configuration de connexion à votre nouvelle base de données. Pour cela, il faut ouvrir le localhost sur votre navigateur puis atteindre un des documents php à la source de votre projet (dossier src/web/) et voir si cela s'exécute correctement car si ce n'est pas le cas, il suffit d'aller trouver dans le dossier includes/ le fichier config.php et de l'éditer en comprenant à quoi servent les différentes variables de connexion à une BDD. </li>
+	</ol>
+	</p>
+	
+	<h1> Utilisation </h1>
+	<p> Normalement, vous n'avez plus qu'à vous balader sur votre site internet qui, soit-dit en passant est en cours de réalisation et donc pas fonctionnel à 100%.</p>
+
+	<h1> FAQ </h1>
+	<p>Si vous avez des questions, n'hésitez pas à nous les transmettre.<br >
+	L'équipe de développement à votre service !
+	</p>
+</body>
+</html>
